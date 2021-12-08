@@ -81,7 +81,7 @@ obeliskSource = obeliskSourceWithBranch "master"
 -- | Source for obelisk developer targeting a specific obelisk branch
 obeliskSourceWithBranch :: Name Branch -> ThunkSource
 obeliskSourceWithBranch branch = ThunkSource_GitHub $ GitHubSource
-  { _gitHubSource_owner = "obsidiansystems"
+  { _gitHubSource_owner = "ProEnergyVIP"
   , _gitHubSource_repo = "obelisk"
   , _gitHubSource_branch = Just branch
   , _gitHubSource_private = False
