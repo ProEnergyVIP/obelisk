@@ -1,8 +1,8 @@
 {
-  "owner": "reflex-frp",
+  "owner": "ProEnergyVIP",
   "repo": "reflex-platform",
-  "branch": "ghc-8.10",
+  "branch": "proenergy/ghc-8.10",
   "private": false,
-  "rev": "d54dbd985e469bd903a54dfe8653df1e255c9be9",
-  "sha256": "1li1491fagrba8zn3z53qrzyd5rjhnj9iv78hpm9d3ss8fkzqibz"
+  "rev": "ca0fb96b458dce2f970d3055ba2d5e9b5906961a",
+  "sha256": "1zg9x05am6jhld970ljls6vbq74j2wjl93rjaga6i9lnlwmkj84x"
 }
