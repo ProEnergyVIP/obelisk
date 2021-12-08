@@ -7,34 +7,34 @@ let
 in {
   ghcide = justStaticExecutables (dontCheck (callHackageDirect {
     pkg = "ghcide";
-    ver = "0.2.0";
-    sha256 = "199l4qzrghhz6wbfkgqdl4gll4wvgpr190kinzhv88idnn9pxm96";
+    ver = "1.5.0.1";
+    sha256 = "ec0970df3e04283f0ad74b957720090ddeb900ce0b3d6c997a6c466e6ec2ce7c";
   } rec {
     ghc-check = callHackageDirect {
       pkg = "ghc-check";
-      ver = "0.3.0.1";
-      sha256 = "1dj909m09m24315x51vxvcl28936ahsw4mavbc53danif3wy09ns";
+      ver = "0.5.0.6";
+      sha256 = "9a845cf69f8943bf8eb9f1df07dd9a6cd26f005a973243f649725034e5728d91";
     } { };
-    lsp-test = dontCheck (callHackage "lsp-test" "0.6.1.0" { });
-    haddock-library = dontCheck (callHackage "haddock-library" "1.8.0" { });
+    lsp-test = dontCheck (callHackage "lsp-test" "0.14.0.1" { });
+    haddock-library = dontCheck (callHackage "haddock-library" "1.10.0" { });
     haskell-lsp = dontCheck (callHackageDirect {
       pkg = "haskell-lsp";
-      ver = "0.22.0.0";
-      sha256 = "1q3w46qcvzraxgmw75s7bl0qvb2fvff242r5vfx95sqska566b4m";
+      ver = "0.24.0.0";
+      sha256 = "2fde650a1f7405c663cb3ca4224bae5be63c387d83d3e8c8c60086e47942823f";
     } { inherit haskell-lsp-types; });
     haskell-lsp-types = dontCheck (callHackageDirect {
       pkg = "haskell-lsp-types";
-      ver = "0.22.0.0";
-      sha256 = "1apjclphi2v6ggrdnbc0azxbb1gkfj3x1vkwpc8qd6lsrbyaf0n8";
+      ver = "0.24.0.0";
+      sha256 = "764d51c6b0e52bbafe042f10ad69fdaddcc31007d78a6fada6be24ddc513f3dc";
     } { });
     regex-tdfa = dontCheck (callHackage "regex-tdfa" "1.3.1.0" {
       regex-base = dontCheck (callHackage "regex-base" "0.94.0.0" { });
     });
-    shake = dontCheck (callHackage "shake" "0.18.4" { });
+    shake = dontCheck (callHackage "shake" "0.19.6" { });
     hie-bios = dontCheck (callHackageDirect {
       pkg = "hie-bios";
-      ver = "0.5.0";
-      sha256 = "116nmpva5jmlgc2dgy8cm5wv6cinhzmga1l0432p305074w720r2";
+      ver = "0.8.0";
+      sha256 = "7b673282dc5e54c653c193b049a266749149a13018c2a58f338967a7da3ffeaa";
     } { });
   }));
 }
