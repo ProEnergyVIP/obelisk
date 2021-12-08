@@ -5,5 +5,5 @@ let
   inherit (pkgs.haskellPackages) callHackageDirect callHackage;
 
 in {
-  ghcide = justStaticExecutables (dontCheck super.ghcide)
+  ghcide = justStaticExecutables (dontCheck super.ghcide);
 }
