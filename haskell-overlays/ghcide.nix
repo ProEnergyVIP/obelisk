@@ -5,12 +5,8 @@ let
   inherit (pkgs.haskellPackages) callHackageDirect callHackage;
 
 in {
-  ghcide = justStaticExecutables (dontCheck (callHackageDirect {
-    pkg = "ghcide";
-    ver = "1.5.0.1";
-    sha256 = "ec0970df3e04283f0ad74b957720090ddeb900ce0b3d6c997a6c466e6ec2ce7c";
-  } rec {
-    ghc-check = callHackageDirect {
+  ghcide = justStaticExecutables (dontCheck (callHackage "ghcide" "1.5.0.1" {}));
+  ghc-check = callHackageDirect {
       pkg = "ghc-check";
       ver = "0.5.0.6";
       sha256 = "9a845cf69f8943bf8eb9f1df07dd9a6cd26f005a973243f649725034e5728d91";
@@ -36,5 +32,4 @@ in {
       ver = "0.8.0";
       sha256 = "7b673282dc5e54c653c193b049a266749149a13018c2a58f338967a7da3ffeaa";
     } { });
-  }));
 }
