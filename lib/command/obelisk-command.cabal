@@ -1,5 +1,5 @@
 name: obelisk-command
-version: 0.9.4.16
+version: 0.9.4.17
 cabal-version: >= 1.8
 build-type: Simple
 
