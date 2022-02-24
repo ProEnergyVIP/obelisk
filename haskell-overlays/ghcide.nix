@@ -8,7 +8,7 @@ in {
   ghcide = justStaticExecutables (dontCheck (callHackageDirect {
     pkg = "ghcide";
     ver = "1.5.0.1";
-    sha256 = "ec0970df3e04283f0ad74b957720090ddeb900ce0b3d6c997a6c466e6ec2ce7c";
+    sha256 = "XK9g2/6J+twhAOaweajVqWV69psNV5EtVg6DeCw8fJE=";
   } rec {
     ghc-check = callHackageDirect {
       pkg = "ghc-check";
