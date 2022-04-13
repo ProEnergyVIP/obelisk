@@ -1,8 +1,8 @@
 {
-  "owner": "reflex-frp",
+  "owner": "ProEnergyVIP",
   "repo": "reflex-platform",
   "branch": "nixpkgs-21.05",
   "private": false,
-  "rev": "51665aa2c743a5f390d0ce64fc6559faa14afaee",
-  "sha256": "0fv1ibfna4acwavidzizh2fdh94hy2fsd22habf8v4qg05cry9kq"
+  "rev": "6e5d151e4cf148f03829cc00c806a45d21f13023",
+  "sha256": "0v1cnjnzbzisrg9yy24v4n016valpqyc13i7g0njklfppnrsvw7y"
 }
