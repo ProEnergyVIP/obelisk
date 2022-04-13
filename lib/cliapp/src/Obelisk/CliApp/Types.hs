@@ -12,7 +12,7 @@ module Obelisk.CliApp.Types where
 
 import Control.Concurrent.MVar (MVar)
 import Control.Monad.Catch (MonadCatch, MonadMask, MonadThrow)
-import Control.Monad.Fail (MonadFail)
+import Control.Monad.Fail ()
 import Control.Monad.Log (LoggingT(..), MonadLog, Severity (..), WithSeverity (..), logMessage)
 import Control.Monad.Reader (MonadIO, ReaderT (..), MonadReader (..), ask, mapReaderT)
 import Control.Monad.Writer (WriterT)
