@@ -40,4 +40,8 @@ in
   QuickCheck = if pkgs.stdenv.hostPlatform != pkgs.stdenv.targetPlatform then
                    haskellLib.dontCheck (super.QuickCheck)
                else super.QuickCheck;
+
+  time-compat = if pkgs.stdenv.hostPlatform != pkgs.stdenv.targetPlatform then
+                    haskellLib.dontCheck (super.time-compat)
+                else super.time-compat;
 }
