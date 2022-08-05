@@ -87,7 +87,7 @@ in rec {
       ${if optimizationLevel == null then ''
         ln -s "$dir/all.unminified.js" "$dir/all.js"
       '' else ''
-        '${pkgs.closurecompiler}/bin/closure-compiler' --externs '${reflex-platform.ghcjsExternsJs}' -O '${optimizationLevel}' --jscomp_warning=checkVars --warning_level=QUIET --js_output_file="$dir/all.js" "$dir/all.unminified.js"
+        '${pkgs.closurecompiler}/bin/closure-compiler' --externs '${reflex-platform.ghcjsExternsJs}' -O '${optimizationLevel}' --warning_level=QUIET --js_output_file="$dir/all.js" "$dir/all.unminified.js"
       ''}
     done
   '';
