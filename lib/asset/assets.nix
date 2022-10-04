@@ -8,10 +8,9 @@ rec {
 # Default encoding generation function for this platform; usually zopfliEncodings, but gzipEncodings on darwin due to zopfli not building on darwin.
 #
 # defaultEncodings :: String -> Derivation
-defaultEncodings = gzipEncodings;
+defaultEncodings =
   # zopfli isn't supported on macOS as of nixpkgs eafd703a63
-  # Disable zopfliEncodings because it's too slooooooooooooooooooooooooooooow.
-  #if nixpkgs.stdenv.isDarwin then gzipEncodings else zopfliEncodings;
+  if nixpkgs.stdenv.isDarwin then gzipEncodings else zopfliEncodings;
 
 # Encoding generation function which uses zopfli to encode the asset with very high compression efficiency, at the cost of CPU time compressing.
 # Generates gzip, compress/zlib, and deflate outputs all using zopfli with 5 iterations.
